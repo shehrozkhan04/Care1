@@ -172,95 +172,99 @@
 
 <body>
 
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="loader">
-			<div class="loader-outter"></div>
-			<div class="loader-inner"></div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
 
-			<div class="indicator">
-				<svg width="16px" height="12px">
-					<polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-					<polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<!-- End Preloader -->
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
 
-	<!-- Header Area -->
-	<header class="header">
-		<!-- Topbar -->
-		<div class="topbar">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-5 col-12">
-					</div>
-					<div class="col-lg-6 col-md-7 col-12">
-						<!-- Top Contact -->
-						<ul class="top-contact">
-							<li><i class="fa fa-envelope"></i><a
-									href="mailto:eprojectcare.2@gmail.com">eprojectcare.2@gmail.com</a></li>
-						</ul>
-						<!-- End Top Contact -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Topbar -->
-		<!-- Header Inner -->
-		<div class="header-inner">
-			<div class="container">
-				<div class="inner">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-12">
-							<!-- Start Logo -->
-							<div class="logo">
-								<a href="index.php">
-									<h1>CA<span>RE</span></h1>
-								</a>
-							</div>
-							<!-- End Logo -->
-							<!-- Mobile Nav -->
-							<div class="mobile-nav"></div>
-							<!-- End Mobile Nav -->
-						</div>
-						<div class="col-lg-7 col-md-9 col-12">
-							<!-- Main Menu -->
-							<div class="main-menu">
-								<nav class="navigation">
-									<ul class="nav menu">
-										<li><a href="index.php">Home</i></a>
-										</li>
-										<li><a href="alldoctors.php">Doctors </a></li>
-										<li><a href="services.php">Services </a></li>
-										<li><a href="login.php">Login </i></a>
+    <!-- Header Area -->
+    <header class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-12">
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <!-- Top Contact -->
+                        <ul class="top-contact">
+                            <li><i class="fa fa-envelope"></i><a
+                                    href="mailto:eprojectcare.2@gmail.com">eprojectcare.2@gmail.com</a></li>
+                        </ul>
+                        <!-- End Top Contact -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <!-- Start Logo -->
+                            <div class="logo">
+                                <a href="index.php">
+                                    <h1>CA<span>RE</span></h1>
+                                </a>
+                            </div>
+                            <!-- End Logo -->
+                            <!-- Mobile Nav -->
+                            <div class="mobile-nav"></div>
+                            <!-- End Mobile Nav -->
+                        </div>
+                        <div class="col-lg-7 col-md-9 col-12">
+                            <!-- Main Menu -->
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu">
+                                        <li><a href="index.php">Home</i></a>
+                                        </li>
+                                        <li><a href="alldoc.php">Doctors </a></li>
+                                        <li><a href="services.php">Services </a></li>
+                                        <li><a href="login.php">Login </i></a>
 
-										</li>
-										<li><a href="signup.php">Sign Up <i class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li><a href="singupdoctor.php">Register as Doctor</a></li>
-												<li><a href="patientsignup.php">Register as Patient</a></li>
-											</ul>
-										</li>
-										<li><a href="contact.php">Contact Us</a></li>
-									</ul>
-								</nav>
-							</div>
-							<!--/ End Main Menu -->
-						</div>
-						<div class="col-lg-2 col-12">
-							<div class="get-quote">
-								<a href="appointment.php" class="btn">Book Appointment</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Header Inner -->
-	</header>
-	<!-- End Header Area -->
+                                        </li>
+                                        <li><a href="signup.php">Sign Up <i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="singupdoctor.php">Register as Doctor</a></li>
+                                                <li><a href="patientsignup.php">Register as Patient</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.php">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--/ End Main Menu -->
+                        </div>
+                        <div class="col-lg-2 col-12"
+                            style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px;">
+                            <input style="border-radius: 30px; padding-left: 20px;  font-size: 12px; " type="search"
+                                name="" id="" placeholder="Search">
+                            <button style="background-color: transparent; border: none;">
+                                <i class="ri-search-line" style="font-size: 1.7vw; cursor: pointer;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+ 
 
 <div class="login-main">
     <div class="login-container">

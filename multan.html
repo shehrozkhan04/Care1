@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: "poppins", sans-serif;
+        }
+
+        .doctor-main {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .d-card1 {
+
+            width: 20%;
+            height: 85%;
+            border-radius: 6px;
+            border: 1px solid rgba(128, 128, 128, 0.121);
+            /* box-shadow: 14px 14px 20px #cbced1 , -14px -14px 20px #ffffff; */
+
+        }
+
+        .d-card1:hover {
+
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+            transition: 0.2s ease-in-out;
+            background-color: #fff;
+        }
+
+        .c-img {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            background-color: #eaefff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .c-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .c-text {
+            width: 100%;
+            height: 40%;
+            padding-left: 10px;
+        }
+
+        .c-text p {
+            font-size: 1vw;
+            padding-top: 10px;
+            color: rgb(20, 177, 20);
+        }
+
+        .c-text h1 {
+            font-size: 1.5vw;
+            font-weight: 500;
+        }
+
+        .c-text h6 {
+            margin-top: -1px;
+            font-size: 1vw;
+            font-weight: 500;
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .line1 {
+            width: 10%;
+            height: 2px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .city-info {
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .city {
+            width: 100%;
+            text-align: center;
+        }
+
+        .city-info h1 {
+            font-size: 1.8vw;
+            font-weight: 400;
+        }
+
+        .city-info select {
+            width: 20%;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .doctor-main {
+                flex-wrap: wrap;
+                gap: 10px;
+                height: auto;
+                /* Remove fixed height */
+                justify-content: center;
+            }
+
+            .d-card1 {
+                width: 45%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .c-text {
+                padding: 10px 20px;
+            }
+
+            .c-text h1 {
+                font-size: 4vw;
+            }
+
+            .c-text h6 {
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .c-text p {
+                font-size: 12px;
+            }
+
+            .city select {
+                width: 80%;
+                outline: none;
+                border: 1px solid #000;
+            }
+
+            .city h1 {
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .doctor-main {
+                flex-wrap: wrap;
+                gap: 15px;
+                /* Adjust gap between cards */
+                height: auto;
+                /* Remove fixed height */
+                justify-content: center;
+                /* Center align cards */
+                flex-direction: column;
+                margin-bottom: 20px;
+                /* Stack cards vertically */
+            }
+
+            .c-img {
+                width: 100%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .c-img img {
+                width: 50%;
+            }
+
+            .d-card1 {
+                width: 80%;
+                /* Full width with some margin */
+                height: auto;
+                /* Let height adjust dynamically */
+                margin: 0 auto;
+                /* Center cards horizontally */
+            }
+
+            .c-text h1 {
+                font-size: 5vw;
+                /* Smaller font size for smaller screens */
+            }
+
+            .c-text h6 {
+                font-size: 4vw;
+                /* Adjust for readability */
+            }
+
+            .c-text p {
+                font-size: 4vw;
+            }
+
+            .line {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city-info">
+        <div class="city">
+            <h1>Browse through the city</h1>
+            <select name="city" id="city" onchange="loadCityContent()" >
+                <option value="">Select City</option>
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Islamabad</option>
+                <option value="peshawar">Peshawar</option>
+                <option value="multan">Multan</option>
+            </select>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; padding-top: 20px; font-weight: 500; ">ALL DOCTORS</h1>
+    <div class="line">
+        <div class="line1"></div>
+    </div>
+    <div class="doctor-main">
+        <!-- Cardiologists -->
+        <div class="d-card1">
+            <div class="c-img">
+                <img src="https://drsanjeevguptactvs.com/wp-content/uploads/2018/02/img-doctor.png" alt="Doctor 1">
+            </div>
+            <div class="c-text">
+                <p>Available</p>
+                <h1>Dr. Richard James</h1>
+                <h6>Cardiologist</h6>
+            </div>
+        </div>
+        <div class="d-card1">
+            <div class="c-img">
+                <img src="https://drsanjeevguptactvs.com/wp-content/uploads/2018/02/img-doctor.png" alt="Doctor 1">
+            </div>
+            <div class="c-text">
+                <p>Available</p>
+                <h1>Dr. Edward Jenner</h1>
+                <h6>Neurologist</h6>
+            </div>
+        </div>
+        <div class="d-card1">
+            <div class="c-img">
+                <img src="https://drsanjeevguptactvs.com/wp-content/uploads/2018/02/img-doctor.png" alt="Doctor 1">
+            </div>
+            <div class="c-text">
+                <p>Available</p>
+                <h1>Dr. William Harvey</h1>
+                <h6>Dermatologist</h6>
+            </div>
+        </div>
+        <div class="d-card1">
+            <div class="c-img">
+                <img src="https://drsanjeevguptactvs.com/wp-content/uploads/2018/02/img-doctor.png" alt="Doctor 1">
+            </div>
+            <div class="c-text">
+                <p>Available</p>
+                <h1>Dr. Alexander Fleming</h1>
+                <h6>Cardiologist    </h6>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to load content based on the selected city
+        function loadCityContent() {
+            let city = document.getElementById('city').value;
+            if (city === 'karachi') {
+                window.location.href = 'karachi.html';
+            }
+            else if (city ==='multan') {
+                window.location.href ='multan.html';
+            }
+            else if (city ==='lahore') {
+                window.location.href ='lahore.html';
+            }
+            else if (city ==='islamabad') {
+                window.location.href ='islamabad.html';
+            }
+            else if (city ==='peshawar') {
+                window.location.href ='peshawar.html';
+            }
+        }
+        
+    </script>
+  
+</body>
+
+</html>

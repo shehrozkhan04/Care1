@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,6 +75,12 @@
             background-color: #fff;
         }
 
+.city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
         .c-img {
             width: 100%;
             height: 60%;
@@ -147,6 +151,7 @@
         .city-info h1 {
             font-size: 1.8vw;
             font-weight: 400;
+            padding-bottom: 20px;
         }
 
         .city-info select {
@@ -253,10 +258,9 @@
     </style>
 </head>
 
-<body>
 
     <!-- Preloader -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="loader">
             <div class="loader-outter"></div>
             <div class="loader-inner"></div>
@@ -268,7 +272,7 @@
                 </svg>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Preloader -->
 
     <!-- Header Area -->
@@ -347,8 +351,6 @@
         <!--/ End Header Inner -->
     </header>
     <!-- End Header Area -->
-
-<body>
     <div class="city-info">
         <div class="city">
             <h1>Browse through the city</h1>
@@ -375,8 +377,8 @@
             </div>
             <div class="c-text">
                 <p>Available</p>
-                <h1>Dr. Richard James</h1>
-                <h6>Cardiologist</h6>
+                <h1>Dr. Richard Doll</h1>
+                <h6>Dentist</h6>
             </div>
         </div>
         <div class="d-card1">
@@ -385,7 +387,17 @@
             </div>
             <div class="c-text">
                 <p>Available</p>
-                <h1>Dr. Edward Jenner</h1>
+                <h1>Dr. Robert Winston</h1>
+                <h6>Dermatologist</h6>
+            </div>
+        </div>
+        <div class="d-card1">
+            <div class="c-img">
+                <img src="https://drsanjeevguptactvs.com/wp-content/uploads/2018/02/img-doctor.png" alt="Doctor 1">
+            </div>
+            <div class="c-text">
+                <p>Available</p>
+                <h1>>Dr. Joseph Lister</h1>
                 <h6>Neurologist</h6>
             </div>
         </div>
@@ -396,43 +408,154 @@
             <div class="c-text">
                 <p>Available</p>
                 <h1>Dr. William Harvey</h1>
-                <h6>Dermatologist</h6>
-            </div>
-        </div>
-        <div class="d-card1">
-            <div class="c-img">
-                <img src="https://drsanjeevguptactvs.com/wp-content/uploads/2018/02/img-doctor.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Alexander Fleming</h1>
-                <h6>Cardiologist    </h6>
+                <h6>Cardiologist</h6>
             </div>
         </div>
     </div>
+    
+					<!-- Footer Area -->
+<footer id="footer" class="footer">
+    <!-- Footer Top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>About Us</h2>
+                        <p>We are dedicated to providing compassionate care and medical excellence for all our patients. Our expert team works tirelessly to ensure your health and well-being are in the best hands.</p>
+                        <!-- Social -->
+                       
+                        <!-- End Social -->
+                    </div>
+                </div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="single-footer f-link">
+						<h2>Quick Links</h2>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<ul>
+									<li><a href="index.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+									<li><a href="alldoc.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Doctors</a></li>
+									<li><a href="services.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+									<li><a href="login.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Login</a></li>
+									<li><a href="contact.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<ul>
+									<li><a href="singupdoctor.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Register as Doctor</a></li>
+									<li><a href="patientsignup.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Register as Patient</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>Open Hours</h2>
+                        <p>We are available during the following hours to assist with your health needs:</p>
+                        <ul class="time-sidual">
+                            <li class="day">Monday - Friday <span>24 Hours</span></li>
+                            <li class="day">Saturday <span>24 Hours</span></li>
+                            <li class="day">Sunday <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>Newsletter</h2>
+                        <p>Subscribe to our newsletter to receive updates, medical news, and tips directly in your inbox.</p>
+                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                            <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email">
+                            <button class="button"><i class="icofont icofont-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Top -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="copyright-content">
+                        <p>© Copyright 2025 | All Rights Reserved by <a href="mailto:eprojectcare.2@gmail.com" target="_blank">eprojectcare.2@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Copyright -->
+</footer>
+<!-- End Footer Area -->
+
+
+				<!-- jquery Min JS -->
+				<script src="js/jquery.min.js"></script>
+				<!-- jquery Migrate JS -->
+				<script src="js/jquery-migrate-3.0.0.js"></script>
+				<!-- jquery Ui JS -->
+				<script src="js/jquery-ui.min.js"></script>
+				<!-- Easing JS -->
+				<script src="js/easing.js"></script>
+				<!-- Color JS -->
+				<script src="js/colors.js"></script>
+				<!-- Popper JS -->
+				<script src="js/popper.min.js"></script>
+				<!-- Bootstrap Datepicker JS -->
+				<script src="js/bootstrap-datepicker.js"></script>
+				<!-- Jquery Nav JS -->
+				<script src="js/jquery.nav.js"></script>
+				<!-- Slicknav JS -->
+				<script src="js/slicknav.min.js"></script>
+				<!-- ScrollUp JS -->
+				<script src="js/jquery.scrollUp.min.js"></script>
+				<!-- Niceselect JS -->
+				<script src="js/niceselect.js"></script>
+				<!-- Tilt Jquery JS -->
+				<script src="js/tilt.jquery.min.js"></script>
+				<!-- Owl Carousel JS -->
+				<script src="js/owl-carousel.js"></script>
+				<!-- counterup JS -->
+				<script src="js/jquery.counterup.min.js"></script>
+				<!-- Steller JS -->
+				<script src="js/steller.js"></script>
+				<!-- Wow JS -->
+				<script src="js/wow.min.js"></script>
+				<!-- Magnific Popup JS -->
+				<script src="js/jquery.magnific-popup.min.js"></script>
+				<!-- Counter Up CDN JS -->
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+				<!-- Bootstrap JS -->
+				<script src="js/bootstrap.min.js"></script>
+				<!-- Main JS -->
+				<script src="js/main.js"></script>
+
     <script>
         // Function to load content based on the selected city
         function loadCityContent() {
             let city = document.getElementById('city').value;
             if (city === 'karachi') {
-                window.location.href = 'karachi.html';
+                window.location.href = 'karachi.php';
             }
             else if (city ==='multan') {
-                window.location.href ='multan.html';
+                window.location.href ='multan.php';
             }
             else if (city ==='lahore') {
-                window.location.href ='lahore.html';
+                window.location.href ='lahore.php';
             }
             else if (city ==='islamabad') {
-                window.location.href ='islamabad.html';
+                window.location.href ='islamabad.php';
             }
             else if (city ==='peshawar') {
-                window.location.href ='peshawar.html';
+                window.location.href ='peshawar.php';
             }
         }
         
     </script>
-  
-</body>
 
+</body>
 </html>

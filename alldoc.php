@@ -245,12 +245,6 @@
             }
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
         a:hover .d-card1 {
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
             transition: 0.2s ease-in-out;
@@ -428,136 +422,149 @@
         <div class="line1"></div>
     </div>
     <div class="doctor-main">
-        <!-- Cardiologists -->
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc1.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Richard James</h1>
-                <h6>Cardiologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc2.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Edward Jenner</h1>
-                <h6>Cardiologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc3.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. William Harvey</h1>
-                <h6>Cardiologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc4.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Alexander Fleming</h1>
-                <h6>Cardiologist</h6>
-            </div>
-        </a>
+ <!-- Cardiologists -->
+<a href="confirmApp.php?doctor=Dr. Ali Raza&specialty=Cardiology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc1.png" alt="Doctor 1">
     </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Ali Raza</h1>
+        <h6>Cardiologist</h6>
+    </div>
+</a>
 
-    <div class="doctor-main">
-        <!-- Neurologists -->
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc5.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Florence Nightingale</h1>
-                <h6>Neurologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc6.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Joseph Lister</h1>
-                <h6>Neurologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc7.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Patrick Steptoe</h1>
-                <h6>Neurologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc8.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. John Snow</h1>
-                <h6>Neurologist</h6>
-            </div>
-        </a>
+<a href="confirmApp.php?doctor=Dr. Ayesha Malik&specialty=Cardiology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc2.png" alt="Doctor 2">
     </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Ayesha Malik</h1>
+        <h6>Cardiologist</h6>
+    </div>
+</a>
 
-    <div class="doctor-main">
-        <!-- Dermatologists -->
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc9.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Robert Winston</h1>
-                <h6>Dermatologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc10.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Richard Doll</h1>
-                <h6>Dermatologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc11.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Thomas Addison</h1>
-                <h6>Dermatologist</h6>
-            </div>
-        </a>
-        <a href="#" class="d-card1">
-            <div class="c-img">
-                <img src="img/doc12.png" alt="Doctor 1">
-            </div>
-            <div class="c-text">
-                <p>Available</p>
-                <h1>Dr. Thomas Hodgkin</h1>
-                <h6>Dermatologist</h6>
-            </div>
-        </a>
+<a href="confirmApp.php?doctor=Dr. Hammad Hussain&specialty=Cardiology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc3.png" alt="Doctor 3">
     </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Hammad Hussain</h1>
+        <h6>Cardiologist</h6>
+    </div>
+</a>
+
+<a href="confirmApp.php?doctor=Dr. Zafar Ahmed&specialty=Cardiology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc4.png" alt="Doctor 4">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Zafar Ahmed</h1>
+        <h6>Cardiologist</h6>
+    </div>
+</a>
+
+</div>
+
+<div class="doctor-main">
+  <!-- Neurologists -->
+<a href="confirmApp.php?doctor=Dr. Sara Khan&specialty=Neurology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc5.png" alt="Doctor 5">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Sara Khan</h1>
+        <h6>Neurologist</h6>
+    </div>
+</a>
+
+<a href="confirmApp.php?doctor=Dr. Bilal Ahmed&specialty=Neurology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc6.png" alt="Doctor 6">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Bilal Ahmed</h1>
+        <h6>Neurologist</h6>
+    </div>
+</a>
+
+<a href="confirmApp.php?doctor=Dr. Usman Tariq&specialty=Neurology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc7.png" alt="Doctor 7">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Usman Tariq</h1>
+        <h6>Neurologist</h6>
+    </div>
+</a>
+
+<a href="confirmApp.php?doctor=Dr. Usman Siddiqui&specialty=Neurology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc8.png" alt="Doctor 8">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Usman Siddiqui</h1>
+        <h6>Neurologist</h6>
+    </div>
+</a>
+
+</div>
+
+<div class="doctor-main">
+    <!-- Dermatologists -->
+<a href="confirmApp.php?doctor=Dr. Fatima Javed&specialty=Dermatology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc9.png" alt="Doctor 9">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Fatima Javed</h1>
+        <h6>Dermatologist</h6>
+    </div>
+</a>
+
+<a href="confirmApp.php?doctor=Dr. Imran Shah&specialty=Dermatology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc10.png" alt="Doctor 10">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Imran Shah</h1>
+        <h6>Dermatologist</h6>
+    </div>
+</a>
+
+<a href="confirmApp.php?doctor=Dr. Nadia Zafar&specialty=Dermatology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc11.png" alt="Doctor 11">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Nadia Zafar</h1>
+        <h6>Dermatologist</h6>
+    </div>
+</a>
+
+<a href="confirmApp.php?doctor=Dr. Waqas Hussain&specialty=Dermatology" class="d-card1">
+    <div class="c-img">
+        <img src="img/doc12.png" alt="Doctor 12">
+    </div>
+    <div class="c-text">
+        <p>Available</p>
+        <h1>Dr. Waqas Hussain</h1>
+        <h6>Dermatologist</h6>
+    </div>
+</a>
+
+</div>
+
 
 
 
@@ -696,6 +703,28 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <script>
+        // Function to load content based on the selected city
+        function loadCityContent() {
+            let city = document.getElementById('city').value;
+            if (city === 'karachi') {
+                window.location.href = 'karachi.php';
+            }
+            else if (city ==='multan') {
+                window.location.href ='multan.php';
+            }
+            else if (city ==='lahore') {
+                window.location.href ='lahore.php';
+            }
+            else if (city ==='islamabad') {
+                window.location.href ='islamabad.php';
+            }
+            else if (city ==='peshawar') {
+                window.location.href ='peshawar.php';
+            }
+        }
+        
+    </script>
 </body>
 
 </html>

@@ -141,210 +141,32 @@
     </header>
     <!-- End Header Area -->
 
+<!-- Star Hero Section Area -->
 
+<style>
+    .hero-notifier{
+        font-family: "Poppins", sans-serif;
+        padding: 10vw 20vw;
+        text-align: center;
+    }
+    .hero-notifier a{
+        background-color: #007bff;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+</style>
 
-
-
-<!-- Start service -->
-<section class="services section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>We Offer Different Services To Improve Your Health</h2>
-                    <img src="img/section-img.png" alt="#">
-                    <p>Discover a Range of Expert Services Designed to Elevate Your Health and Well-Being.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="icofont icofont-prescription"></i>
-                    <h4>General Treatment</h4>
-                    <p>Our general treatment services cover a wide range of health conditions, providing
-                        comprehensive care for everyday health needs and common ailments.</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="icofont icofont-tooth"></i>
-                    <h4>Teeth Whitening</h4>
-                    <p>Achieve a brighter smile with our professional teeth whitening services, designed to safely
-                        and effectively enhance the appearance of your teeth.</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="icofont icofont-heart-alt"></i>
-                    <h4>Heart Surgery</h4>
-                    <p>Our heart surgery services are performed by experienced specialists, focusing on treating
-                        cardiovascular conditions with advanced surgical techniques and care.</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="icofont icofont-listening"></i>
-                    <h4>Ear Treatment</h4>
-                    <p>We offer specialized ear treatment services, addressing hearing problems and ear infections
-                        with expert care and modern medical solutions.</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="icofont icofont-eye-alt"></i>
-                    <h4>Vision Problems</h4>
-                    <p>Our eye care specialists provide treatments for various vision problems, from routine exams
-                        to advanced treatments for eye conditions.</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="icofont icofont-blood"></i>
-                    <h4>Blood Transfusion</h4>
-                    <p>We offer safe and efficient blood transfusion services, ensuring that every patient receives
-                        the necessary care during medical procedures or recovery.</p>
-                </div>
-                <!-- End Single Service -->
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ End service -->
-
-
-<!-- Pricing Table -->
-<section class="pricing-table section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>We Provide You The Best Treatment In Resonable Price</h2>
-                    <img src="img/section-img.png" alt="#">
-                    <p>Offering You Top-Quality Treatment at Affordable Prices for Your Health and Well-Being.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!-- Start Pricing Table -->
-            <div class="row">
-                <!-- Single Table -->
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="single-table">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <div class="icon">
-                                <i class="icofont icofont-ui-cut"></i>
-                            </div>
-                            <h4 class="title">Plastic Surgery</h4>
-                            <div class="price">
-                                <p class="amount">$199<span>/ Per Visit</span></p>
-                            </div>
-                        </div>
-                        <!-- Table List -->
-                        <ul class="table-list">
-                            <li><i class="icofont icofont-ui-check"></i>Expert surgeons with years of experience
-                            </li>
-                            <li><i class="icofont icofont-ui-check"></i>Personalized treatment plans for your needs
-                            </li>
-                            <li><i class="icofont icofont-ui-check"></i>Safe and minimally invasive procedures</li>
-                            <li class="cross"><i class="icofont icofont-ui-close"></i>Non-certified staff</li>
-                            <li class="cross"><i class="icofont icofont-ui-close"></i>No follow-up care included
-                            </li>
-                        </ul>
-                        <div class="table-bottom">
-                            <a class="btn" href="appointment.php">Book Now</a>
-                        </div>
-                        <!-- Table Bottom -->
-                    </div>
-                </div>
-                <!-- End Single Table-->
-
-                <!-- Single Table -->
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="single-table">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <div class="icon">
-                                <i class="icofont icofont-tooth"></i>
-                            </div>
-                            <h4 class="title">Teeth Whitening</h4>
-                            <div class="price">
-                                <p class="amount">$299<span>/ Per Visit</span></p>
-                            </div>
-                        </div>
-                        <!-- Table List -->
-                        <ul class="table-list">
-                            <li><i class="icofont icofont-ui-check"></i>Safe whitening methods for a brighter smile
-                            </li>
-                            <li><i class="icofont icofont-ui-check"></i>Quick and effective treatment in one session
-                            </li>
-                            <li><i class="icofont icofont-ui-check"></i>Experienced dental professionals for best
-                                results</li>
-                            <li class="cross"><i class="icofont icofont-ui-close"></i>Risk of tooth sensitivity</li>
-                            <li class="cross"><i class="icofont icofont-ui-close"></i>Requires periodic touch-ups
-                            </li>
-                        </ul>
-                        <div class="table-bottom">
-                            <a class="btn" href="appointment.php">Book Now</a>
-                        </div>
-                        <!-- Table Bottom -->
-                    </div>
-                </div>
-                <!-- End Single Table-->
-
-                <!-- Single Table -->
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="single-table">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <div class="icon">
-                                <i class="icofont-heart-beat"></i>
-                            </div>
-                            <h4 class="title">Heart Surgery</h4>
-                            <div class="price">
-                                <p class="amount">$399<span>/ Per Visit</span></p>
-                            </div>
-                        </div>
-                        <!-- Table List -->
-                        <ul class="table-list">
-                            <li><i class="icofont icofont-ui-check"></i>Highly skilled cardiologists and heart
-                                surgeons</li>
-                            <li><i class="icofont icofont-ui-check"></i>Advanced technology for diagnosis and
-                                treatment</li>
-                            <li><i class="icofont icofont-ui-check"></i>Comprehensive post-surgery care and
-                                monitoring</li>
-                            <li><i class="icofont icofont-ui-check"></i>Personalized cardiac rehabilitation programs
-                                and fast services acc to your needs.</li>
-                        </ul>
-                        <div class="table-bottom">
-                            <a class="btn" href="appointment.php">Book Now</a>
-                        </div>
-                        <!-- Table Bottom -->
-                    </div>
-                </div>
-                <!-- End Single Table-->
-            </div>
-            <!--/ End Pricing Table -->
-
-
+<div class="hero-notifier">
+    <h1>Your Request Has Been Successfully Submitted!</h1>
+    <br>
+    <a href="index.php">Go To Homepage</a>
 </div>
-</div>
-</section>
 
+<!-- End Hero Section Area -->
 
-  <!-- Footer Area -->
+					<!-- Footer Area -->
 <footer id="footer" class="footer">
     <!-- Footer Top -->
     <div class="footer-top">
@@ -465,5 +287,4 @@
 				<!-- Main JS -->
 				<script src="js/main.js"></script>
 </body>
-
 </html>

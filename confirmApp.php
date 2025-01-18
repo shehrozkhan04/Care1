@@ -141,8 +141,13 @@
     </header>
     <!-- End Header Area -->
 
+<!-- apointment  -->
+    <?php
+// Check if query parameters are set and get them
+$doctor = isset($_GET['doctor']) ? $_GET['doctor'] : '';
+$specialty = isset($_GET['specialty']) ? $_GET['specialty'] : '';
+?>
 
-<!-- Start Appointment -->
 <section class="appointment">
     <div class="container">
         <div class="row">
@@ -156,71 +161,71 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-12">
-                <form class="form" action="#" onsubmit="return validateForm()">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="name" id="name" type="text" placeholder="Name">
-                                <span class="error" id="nameError"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="email" id="email" type="email" placeholder="Email">
-                                <span class="error" id="emailError"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="phone" id="phone" type="text" placeholder="Phone">
-                                <span class="error" id="phoneError"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <select name="department" id="department" class="form-control">
-                                    <option value="">Select Department</option>
-                                    <option value="Cardiology">Cardiology</option>
-                                    <option value="Neurology">Neurology</option>
-                                    <option value="Dermatology">Dermatology</option>
-                                </select>
-                                <span class="error" id="departmentError"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="doctor" id="doctor" type="text" placeholder="Doctor">
-                                <span class="error" id="doctorError"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input type="text" placeholder="Date" id="datepicker">
-                                <span class="error" id="dateError"></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-12">
-                            <div class="form-group">
-                                <textarea name="message" id="message" placeholder="Write Your Message Here....."></textarea>
-                                <span class="error" id="messageError"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-12">
-                            <div class="form-group">
-                                <div class="button">
-                                    <button type="submit" class="btn" onclick="">Book An Appointment</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-md-8 col-12">
-                            <p>( We will confirm by a Text Message )</p>
-                        </div>
-                    </div>
-                </form>
+            <form class="form" action="#" onsubmit="return validateForm()">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                <input name="name" id="name" type="text" placeholder="Name" >
+                <span class="error" id="nameError"></span>
             </div>
-            <div class="col-lg-6 col-md-12 ">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                <input name="email" id="email" type="email" placeholder="Email">
+                <span class="error" id="emailError"></span>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                <input name="phone" id="phone" type="text" placeholder="Phone">
+                <span class="error" id="phoneError"></span>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                <select name="department" id="department" class="form-control" disabled>
+                    <option value="Cardiology" <?php echo $_GET['specialty'] == 'Cardiology' ? 'selected' : ''; ?>>Cardiology</option>
+                    <option value="Neurology" <?php echo $_GET['specialty'] == 'Neurology' ? 'selected' : ''; ?>>Neurology</option>
+                    <option value="Dermatology" <?php echo $_GET['specialty'] == 'Dermatology' ? 'selected' : ''; ?>>Dermatology</option>
+                </select>
+                <span class="error" id="departmentError"></span>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                <input name="doctor" id="doctor" type="text" placeholder="Doctor" readonly value="<?php echo $_GET['doctor']; ?>">
+                <span class="error" id="doctorError"></span>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                <input type="text" placeholder="Date" id="datepicker">
+                <span class="error" id="dateError"></span>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-12">
+            <div class="form-group">
+                <textarea name="message" id="message" placeholder="Write Your Message Here....."></textarea>
+                <span class="error" id="messageError"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 col-md-4 col-12">
+            <div class="form-group">
+                <div class="button">
+                    <button type="submit" class="btn">Book An Appointment</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-8 col-12">
+            <p>( We will confirm by a Text Message )</p>
+        </div>
+    </div>
+</form>
+
+            </div>
+            <div class="col-lg-6 col-md-12">
                 <div class="appointment-image">
                     <img src="img/contact-img.png" alt="#">
                 </div>
@@ -228,7 +233,7 @@
         </div>
     </div>
 </section>
-<!-- End Appointment -->
+
 
 
 
